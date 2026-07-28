@@ -1,0 +1,13 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q5_T10_ABSTAIN_HAIKU"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q5 Trust - t10 abstention-instructed"
+    description: "Hallucination test: unanswerable questions on t10 agent with abstention instruction"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q5_TRUST_DATASET_DS"
+
+metrics:
+  - "answer_correctness"

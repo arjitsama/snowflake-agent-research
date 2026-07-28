@@ -1,0 +1,20 @@
+condition,mean_pct,stddev_pct,n_runs
+T5_baseline,70.03,2.87,3
+T5_abstain,72.78,1.92,3
+T10_baseline,46.67,2.89,3
+T10_abstain,54.43,2.55,3
+T20_baseline,43.88,0.97,3
+T20_abstain,50.57,2.55,3
+
+Interpretation (higher = better refusal behavior):
+- T5 baseline: 70% correct refusal rate (agent mostly declines unanswerable questions)
+- T10 baseline: 47% correct refusal rate (agent fabricates 53% of the time)
+- T20 baseline: 44% correct refusal rate (agent fabricates 56% of the time)
+
+Key findings:
+1. MORE TABLES = MORE FABRICATION. T5→T20 drops 26pts in refusal quality.
+   With more tables, the agent finds wrong data to confidently answer with.
+2. Abstention instruction helps +7-8pts at T10/T20 but doesn't solve the problem.
+3. For banking clients: at T20, the agent invents numbers 56% of the time on
+   unanswerable questions. Even with explicit "don't fabricate" instructions, it's 50%.
+4. This is arguably MORE important than the accuracy cliff for enterprise deployments.

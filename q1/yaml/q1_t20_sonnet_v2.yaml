@@ -1,0 +1,14 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q3_T20_SONNET"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q1 V2 T20 - SONNET"
+    description: "Phase 2 harder questions: sonnet at t20 table complexity"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q1_TABLE_SCALING_DATASET_V2_DS"
+
+metrics:
+  - "answer_correctness"
+  - "logical_consistency"

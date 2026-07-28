@@ -1,0 +1,13 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q1_T10_GPTMINI"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q1 Mapped T10 - GPTMINI (T5 questions only)"
+    description: "Degradation test: T5-answerable questions on t10 agent with gptmini"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q1_EVAL_T5_ONLY_V4_DS"
+
+metrics:
+  - "answer_correctness"

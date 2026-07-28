@@ -1,0 +1,14 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q3_T20_SONNET"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q4 Architecture - big_view_sonnet"
+    description: "Architecture comparison: big_view_sonnet"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q4_EVAL_DATASET_DS"
+
+metrics:
+  - "answer_correctness"
+  - "logical_consistency"

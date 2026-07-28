@@ -1,0 +1,13 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q2_V4_HAIKU"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q2 V2 V4 - HAIKU"
+    description: "Phase 2 harder questions: haiku with 4 semantic views"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q2_EVAL_DATASET_V2_FIXED_DS"
+
+metrics:
+  - "answer_correctness"

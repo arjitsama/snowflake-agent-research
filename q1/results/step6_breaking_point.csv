@@ -1,0 +1,32 @@
+tier,model,mean_pct,stddev_pct,n_runs
+T5,sonnet,84.41,2.07,5
+T10,sonnet,85.41,3.08,5
+T20,sonnet,69.96,3.10,5
+T40,sonnet,76.81,7.53,5
+T5,haiku,78.74,2.83,5
+T10,haiku,79.47,2.72,5
+T20,haiku,69.07,3.89,5
+T40,haiku,71.30,4.22,5
+T5,gptmini,76.78,4.40,5
+T10,gptmini,74.05,3.48,5
+T20,gptmini,65.68,1.54,4
+T40,gptmini,65.99,2.94,5
+
+Token cost curve (avg input tokens per question):
+tier,sonnet_tokens,haiku_tokens,gptmini_tokens
+T5,61469,35370,23984
+T10,60490,35525,31190
+T20,71272,36930,34375
+T40,65996,47262,29093
+
+Summary:
+- Accuracy cliff happens between T10 and T20 (10-14 pts drop)
+- T20 to T40 shows no additional drop - BUT this is NOT a clean "plateau" finding
+- CAVEAT: T40 distractor tables are DISCONNECTED from the fact table (no FK relationships)
+  while T10→T20 distractors ARE FK-connected. The agent can trivially ignore disconnected
+  tables. This means "no cliff at T40" may reflect connectivity, not count.
+- To prove a real plateau, we'd need T40 with connected distractors (FK columns in fact table)
+- Sonnet T40 went UP 6.8pts vs T20 with ±7.5 stddev - that's noise, not improvement
+- Token cost: Haiku jumps +28% from T20 to T40 (schema still bloats context even if ignored)
+- Reframed conclusion: "connectivity to the fact table, not raw table count, may drive
+  the degradation cliff." Needs connected-distractor test to confirm.

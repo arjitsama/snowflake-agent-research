@@ -1,0 +1,13 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q2_V4_GPTMINI"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q2 Mapped V4 - GPTMINI (V4 questions only)"
+    description: "Degradation test: V4-answerable questions on v4 agent with gptmini"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q2_EVAL_V4_ANSWERABLE_V3_DS"
+
+metrics:
+  - "answer_correctness"

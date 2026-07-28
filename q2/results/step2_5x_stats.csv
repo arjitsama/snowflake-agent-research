@@ -1,0 +1,12 @@
+condition,mean_pct,stddev_pct,n_runs
+V4_SONNET,84.91,1.99,5
+V12_SONNET,85.26,2.36,5
+V4_HAIKU,81.40,2.66,5
+V12_HAIKU,82.09,1.48,5
+V4_GPTMINI,57.16,5.77,5
+V12_GPTMINI,52.57,8.59,5
+
+Conclusion: Extra views don't hurt Sonnet or Haiku (V4≈V12).
+GPT-mini is different: it scores lower overall (57%) and actually degrades
+slightly with more views (57→53%), confirming it can't route effectively.
+High stddev (6-9%) shows GPT-mini is inconsistent at multi-view routing.

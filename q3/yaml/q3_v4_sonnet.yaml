@@ -1,0 +1,14 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q3_V4_SONNET"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q3 V4 - SONNET"
+    description: "Model sensitivity test: sonnet at 4 semantic views"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q1_EVAL_DATASET_V1"
+
+metrics:
+  - "answer_correctness"
+  - "logical_consistency"

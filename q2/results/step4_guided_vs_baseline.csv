@@ -1,0 +1,13 @@
+category,guided_mean_pct,guided_stddev,baseline_mean_pct,baseline_stddev,diff_pts,n_runs
+ambiguous_hard,73.36,35.67,66.04,37.23,+7.3,5
+cross_view,74.60,37.31,69.92,37.74,+4.7,5
+cross_view_hard,81.34,31.02,84.02,31.05,-2.7,5
+single_hard,66.02,32.72,64.06,39.78,+2.0,5
+stress_test,80.64,29.51,74.66,35.41,+6.0,5
+
+Notes:
+- All values are 5-run means (not single run as previously reported)
+- Old report claimed +23pts on ambiguous_hard from run1 only - actual 5-run mean is +7.3pts
+- Guide helps ambiguous (+7.3pts) and stress_test (+6.0pts)
+- Guide slightly hurts cross_view_hard (-2.7pts)
+- High stddev (30-40%) reflects per-question variance across runs

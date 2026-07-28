@@ -1,0 +1,14 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q1_T20_HAIKU"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q4 Architecture - big_view_haiku"
+    description: "Architecture comparison: big_view_haiku"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q4_EVAL_DATASET_DS"
+
+metrics:
+  - "answer_correctness"
+  - "logical_consistency"

@@ -1,0 +1,13 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q1_T20_HAIKU"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q5 Trust - t20 baseline"
+    description: "Hallucination test: unanswerable questions on t20 baseline agent"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q5_TRUST_DATASET_DS"
+
+metrics:
+  - "answer_correctness"

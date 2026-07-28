@@ -1,0 +1,12 @@
+condition,model,tier,p50_latency_sec,p95_latency_sec,avg_latency_sec,min_sec,max_sec,n_questions
+T5_HAIKU,haiku,T5,14.9,34.8,24.7,8.3,259.4,135
+T20_HAIKU,haiku,T20,53.2,256.7,95.3,7.1,321.8,108
+T5_SONNET,sonnet,T5,26.1,60.9,36.9,,, 81
+T20_SONNET,sonnet,T20,29.8,137.0,44.7,,,54
+
+Notes:
+- Latency computed from ALL 5 runs (not single run as before)
+- T20 Haiku is 3.6x slower at p50 and 7.4x slower at p95 vs T5
+- T20 Sonnet shows smaller penalty (1.1x p50, 2.2x p95) - premium model handles clutter faster
+- p95 at T20 is 4+ minutes per question for Haiku
+- Failed runs excluded: T20_haiku_run1 (0 records), T20_gptmini_run5 (0 records)

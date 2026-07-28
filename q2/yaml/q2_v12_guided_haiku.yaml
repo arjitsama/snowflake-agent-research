@@ -1,0 +1,13 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q2_V12_GUIDED_HAIKU"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q2 Guided V12 Haiku (full 50 questions)"
+    description: "Routing guidance experiment: V12 agent with explicit routing instructions"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q2_EVAL_DATASET_V3_DS"
+
+metrics:
+  - "answer_correctness"

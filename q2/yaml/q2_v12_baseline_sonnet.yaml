@@ -1,0 +1,13 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q3_V12_SONNET"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q2 Baseline V12 Sonnet (full 50 questions)"
+    description: "Baseline: V12 agent without routing instructions"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q2_EVAL_DATASET_V3_DS"
+
+metrics:
+  - "answer_correctness"

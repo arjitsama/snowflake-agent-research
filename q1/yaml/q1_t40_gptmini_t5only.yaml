@@ -1,0 +1,13 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q1_T40_GPTMINI"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q1 T40 gptmini (T5 questions only)"
+    description: "Breaking point test: T5-answerable questions on T40 agent"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q1_EVAL_T5_ONLY_V4_DS"
+
+metrics:
+  - "answer_correctness"

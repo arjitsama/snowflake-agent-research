@@ -1,0 +1,17 @@
+condition,mean_pct,stddev_pct,n_runs
+T5_SONNET,89.15,0.56,5
+T10_SONNET,90.63,2.39,5
+T20_SONNET,76.52,2.46,5
+T5_HAIKU,84.96,1.04,5
+T10_HAIKU,83.96,1.53,5
+T20_HAIKU,73.55,2.85,5
+T5_GPTMINI,85.94,1.66,5
+T10_GPTMINI,82.73,7.45,5
+T20_GPTMINI,71.61,5.97,5
+
+Notes (v4 - fixed data with independent FKs and realistic sale amounts):
+- Degradation confirmed: T10->T20 drops 11-14pts across all models
+- T5->T10 is flat or slightly up (no degradation at 10 tables)
+- All models score higher vs v3 (old broken data) because cross-dimension queries now make sense
+- Failed runs: T20_haiku_run1 (0 records), T20_gptmini_run5 (0 records) - excluded from old v3 stats
+- GPT-mini T10 has high stddev (7.45) suggesting inconsistent behavior at that tier

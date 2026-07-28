@@ -1,0 +1,14 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q3_T20_DEEPSEEK"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q3 T20 - DEEPSEEK"
+    description: "Model sensitivity test: deepseek at t20 table complexity"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q1_TABLE_SCALING_DATASET_V1"
+
+metrics:
+  - "answer_correctness"
+  - "logical_consistency"

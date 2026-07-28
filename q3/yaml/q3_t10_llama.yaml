@@ -1,0 +1,14 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q3_T10_LLAMA"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q3 T10 - LLAMA"
+    description: "Model sensitivity test: llama at t10 table complexity"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q1_TABLE_SCALING_DATASET_V1"
+
+metrics:
+  - "answer_correctness"
+  - "logical_consistency"

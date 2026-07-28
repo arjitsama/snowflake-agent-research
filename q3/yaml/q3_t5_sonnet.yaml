@@ -1,0 +1,14 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q3_T5_SONNET"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q3 T5 - SONNET"
+    description: "Model sensitivity test: sonnet at t5 table complexity"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q1_TABLE_SCALING_DATASET_V1"
+
+metrics:
+  - "answer_correctness"
+  - "logical_consistency"

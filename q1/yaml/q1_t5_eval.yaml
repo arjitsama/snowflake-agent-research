@@ -1,0 +1,14 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.RETAILCORP_T5_AGENT"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q1 T5 - 5 Tables"
+    description: "Testing answer quality with 5 tables in semantic view"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q1_TABLE_SCALING_DATASET_V1"
+
+metrics:
+  - "answer_correctness"
+  - "logical_consistency"

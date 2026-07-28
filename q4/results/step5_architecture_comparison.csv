@@ -1,0 +1,17 @@
+architecture,model,mean_pct,stddev_pct,n_runs
+big_view_sonnet,sonnet,72.63,1.89,4
+big_view_haiku,haiku,71.98,0.95,5
+topic_views_sonnet,sonnet,71.05,1.81,5
+topic_views_haiku,haiku,71.17,2.81,5
+
+Per topic-tag breakdown (Sonnet):
+topic_tag,big_view_pct,topic_views_pct,diff_pts
+single_topic,67.81,77.78,+9.96
+multi_topic,72.48,60.87,-11.61
+
+Conclusion:
+- Overall accuracy is similar between architectures (~71-73%)
+- Topic views HELP single-topic questions (+10pts less clutter)
+- Topic views HURT multi-topic questions (-11.6pts harder to combine views)
+- Big view is better for cross-table questions (everything visible in one place)
+- Architecture (c) supervisor pattern not testable (no agent-to-agent SQL call)

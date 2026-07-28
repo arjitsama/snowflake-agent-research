@@ -1,0 +1,13 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q3_V4_SONNET"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q2 Mapped V4 - SONNET (V4 questions only)"
+    description: "Degradation test: V4-answerable questions on v4 agent with sonnet"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q2_EVAL_V4_ANSWERABLE_V3_DS"
+
+metrics:
+  - "answer_correctness"

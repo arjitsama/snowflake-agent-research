@@ -1,0 +1,14 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q1_T10_GPTMINI"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q1 V2 T10 - GPTMINI"
+    description: "Phase 2 harder questions: gpt-5-mini at t10 table complexity"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q1_TABLE_SCALING_DATASET_V2_DS"
+
+metrics:
+  - "answer_correctness"
+  - "logical_consistency"
