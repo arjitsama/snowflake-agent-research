@@ -1,0 +1,11 @@
+condition,mean_pct,stddev_pct,n_runs,notes
+T40_DISCONNECTED_HAIKU,71.30,4.22,5,Old T40 - distractor tables have NO FK to fact (from v3 data)
+T40_CONNECTED_HAIKU,64.17,4.49,3,New T40 - all distractor tables FK-connected to fact table
+T20_HAIKU,73.55,2.85,5,Reference: T20 with current metadata (v4 data)
+
+Conclusion:
+- Connected distractors cause FURTHER degradation below T20 (64% vs 74%)
+- Disconnected T40 was flat vs T20 because agent could trivially ignore unjoined tables
+- CONNECTIVITY drives the cliff, not raw table count
+- This means the T10->T20 drop is real: those tables ARE connected and confuse the agent
+- Guidance updated: "keep views under 15 CONNECTED tables" (disconnected ones are harmless)

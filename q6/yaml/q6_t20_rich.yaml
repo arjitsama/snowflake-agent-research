@@ -1,0 +1,13 @@
+evaluation:
+  agent_params:
+    agent_name: "CORTEX_AGENT_LAB.AGENTS.Q6_T20_RICH_HAIKU"
+    agent_type: "CORTEX AGENT"
+  run_params:
+    label: "Q6 Metadata - T20 rich"
+    description: "Metadata quality test: rich metadata on T20"
+  source_metadata:
+    type: "dataset"
+    dataset_name: "CORTEX_AGENT_LAB.EVAL.Q1_EVAL_T5_ONLY_V4_DS"
+
+metrics:
+  - "answer_correctness"
