@@ -1,0 +1,15 @@
+variant,mean_pct,stddev_pct,n_runs
+bare,74.90,1.88,3
+current,71.57,5.37,3
+rich,76.53,4.24,3
+
+Reference: T5 Haiku = 85.0%, T20 Haiku (from v4 5-run) = 73.6%
+
+Findings:
+- RICH metadata recovers ~5pts vs CURRENT (76.5% vs 71.6%)
+- BARE is NOT the worst - 74.9% (better than CURRENT 71.6%)
+  This suggests current metadata may have misleading elements
+- Even RICH doesn't fully recover the T5→T20 cliff (still -8.5pts from T5)
+- Metadata quality helps but doesn't eliminate the table-count effect
+- Guidance: invest in metadata curation (rich descriptions + synonyms) for ~5pt gain,
+  but this doesn't replace the need to keep views under 15 tables
